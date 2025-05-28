@@ -10,13 +10,19 @@
 
     <header>
         <div class="container top-bar">
-            <div class="logo">Практика</div>
+            <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="Логотип">
+</a>
             <div class="contacts">
                 <span>📞 +7 747 920 0239</span>
-                <span>📧 daurenhudaibergenov@gmail.com</span>
-                <a href="#" class="instagram" title="Instagram">
-                    <img src="images/instagram.png" alt="Instagram">
-                </a>
+                <span id="email" onclick="copyEmail()" style="cursor: pointer;" title="Скопировать email">
+    📧 daurenhudaibergenov@gmail.com
+</span>
+
+                <a href="https://www.instagram.com/metu.univer?igsh=Zjk5bjU3aDN5azNp" target="_blank" class="instagram" title="Instagram">
+    <img src="images/instagram.png" alt="Instagram" class="icon">
+</a>
+
             </div>
         </div>
         <nav class="nav">
@@ -32,24 +38,42 @@
     <h2>Материалы для изучения</h2>
     <div class="cards">
         <div class="card">
-            <p><strong>HTML5 для начинающих</strong></p>
-            <a href="https://youtu.be/_R5a-Kc0pRc?si=oN2XImzNhijGfhlq" target="_blank">▶️ Смотреть</a>
-        </div>
-        <div class="card">
-            <p><strong>Уроки Python с нуля</strong></p>
-            <a href="https://youtu.be/34Rp6KVGIEM?si=pIIn7dZJdY3r1ylP" target="_blank">▶️ Смотреть</a>
-        </div>
-        <div class="card">
-            <p><strong>Как использовать ChatGPT</strong></p>
-            <a href="https://youtu.be/8Ln5C7xSXak?si=mrWEtJOFqA5ZigZm" target="_blank">▶️ Смотреть</a>
-        </div>
-        <div class="card">
-            <p><strong>Изучение CSS для новичков</strong></p>
-            <a href="https://youtu.be/hft4XYApT44?si=_w3cE673PP8ANClT" target="_blank">▶️ Смотреть</a>
-        </div>
+    <img src="https://img.youtube.com/vi/_R5a-Kc0pRc/hqdefault.jpg" alt="HTML5 для начинающих">
+    <p><strong>HTML5 для начинающих</strong></p>
+    <a href="https://youtu.be/_R5a-Kc0pRc?si=oN2XImzNhijGfhlq" target="_blank">▶️ Смотреть</a>
+</div>
+<div class="card">
+    <img src="https://img.youtube.com/vi/34Rp6KVGIEM/hqdefault.jpg" alt="Уроки Python с нуля">
+    <p><strong>Уроки Python с нуля</strong></p>
+    <a href="https://youtu.be/34Rp6KVGIEM?si=pIIn7dZJdY3r1ylP" target="_blank">▶️ Смотреть</a>
+</div>
+<div class="card">
+    <img src="https://img.youtube.com/vi/8Ln5C7xSXak/hqdefault.jpg" alt="Как использовать ChatGPT">
+    <p><strong>Как использовать ChatGPT</strong></p>
+    <a href="https://youtu.be/8Ln5C7xSXak?si=mrWEtJOFqA5ZigZm" target="_blank">▶️ Смотреть</a>
+</div>
+<div class="card">
+    <img src="https://img.youtube.com/vi/hft4XYApT44/hqdefault.jpg" alt="Изучение CSS для новичков">
+    <p><strong>Изучение CSS для новичков</strong></p>
+    <a href="https://youtu.be/hft4XYApT44?si=_w3cE673PP8ANClT" target="_blank">▶️ Смотреть</a>
+</div>
+
     </div>
 </section>
 
+
+<script>
+function copyEmail() {
+    const email = "daurenhudaibergenov@gmail.com";
+    navigator.clipboard.writeText(email)
+        .then(() => {
+            alert("Email скопирован в буфер обмена!");
+        })
+        .catch(err => {
+            console.error("Ошибка копирования: ", err);
+        });
+}
+</script>
 
 </body>
 </html>

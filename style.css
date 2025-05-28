@@ -102,3 +102,41 @@ header {
     margin-top: 10px;
     font-size: 16px;
 }
+
+.icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.logo img {
+    height: 40px;
+}
+.task {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #0077cc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.task h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.task pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 15px;
+}
+
+.task code {
+    font-family: Consolas, monospace;
+    color: #333;
+}
+

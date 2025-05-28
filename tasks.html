@@ -7,17 +7,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>...</header> <!-- такая же шапка -->
+
+    <header>
+        <div class="container top-bar">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Логотип">
+            </a>
+            <div class="contacts">
+                <span>📞 +7 747 920 0239</span>
+                <span class="email" onclick="copyEmail()">📧 daurenhudaibergenov@gmail.com</span>
+                <a href="https://www.instagram.com/metu.univer?igsh=Zjk5bjU3aDN5azNp" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="about.html">О себе</a>
+            <a href="tasks.html">Задания</a>
+            <a href="photos.html">Фотоальбом</a>
+            <a href="diary.html">Дневник</a>
+            <a href="report.html">Отчёт</a>
+        </nav>
+    </header>
 
     <main class="container">
-        <h1>Задания</h1>
-        <ol>
-            <li>Задача 1: ... <br><strong>Ответ:</strong> ...</li>
-            <li>Задача 2: ... <br><strong>Ответ:</strong> ...</li>
-            <li>Задача 3: ... <br><strong>Ответ:</strong> ...</li>
-            <li>Задача 4: ... <br><strong>Ответ:</strong> ...</li>
-            <li>Задача 5: ... <br><strong>Ответ:</strong> ...</li>
-        </ol>
+        <h1 style="text-align:center;">Задания по Python</h1>
+
+        <div class="task">
+            <h3>1. Таблица умножения</h3>
+<pre><code>n = int(input("Введите число: "))
+for i in range(1, 11):
+    print(f"{n} x {i} = {n * i}")</code></pre>
+        </div>
+
+        <div class="task">
+            <h3>2. Проверка палиндрома</h3>
+<pre><code>text = input("Введите строку: ").replace(" ", "").lower()
+if text == text[::-1]:
+    print("Палиндром")
+else:
+    print("Не палиндром")</code></pre>
+        </div>
+
+        <div class="task">
+            <h3>3. Второй максимум</h3>
+<pre><code>numbers = [3, 8, 1, 6, 8, 4]
+unique = list(set(numbers))
+unique.sort()
+print("Второй максимум:", unique[-2])</code></pre>
+        </div>
+
+        <div class="task">
+            <h3>4. Подсчёт цифр в строке</h3>
+<pre><code>text = input("Введите строку: ")
+digits = sum(char.isdigit() for char in text)
+print("Количество цифр:", digits)</code></pre>
+        </div>
+
+        <div class="task">
+            <h3>5. Среднее значение списка</h3>
+<pre><code>def mean(numbers):
+    return sum(numbers) / len(numbers)
+
+example = [10, 20, 30, 40]
+print("Среднее значение:", mean(example))</code></pre>
+        </div>
+
     </main>
+
+    <script>
+        function copyEmail() {
+            const email = "daurenhudaibergenov@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                alert("Email скопирован: " + email);
+            });
+        }
+    </script>
+
 </body>
 </html>
+

@@ -7,7 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>...</header>
+    <header>
+    <div class="container top-bar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Логотип">
+        </a>
+        <div class="contacts">
+            <span>📞 +7 747 920 0239</span>
+            <span id="email" onclick="copyEmail()" style="cursor: pointer;" title="Скопировать email">
+    📧 daurenhudaibergenov@gmail.com
+</span>
+
+                <a href="https://www.instagram.com/metu.univer?igsh=Zjk5bjU3aDN5azNp" target="_blank" class="instagram" title="Instagram">
+    <img src="images/instagram.png" alt="Instagram" class="icon">
+</a>
+        </div>
+    </div>
+    <nav class="nav">
+        <a href="about.html">О себе</a>
+        <a href="tasks.html">Задания</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="diary.html">Дневник</a>
+        <a href="report.html">Отчёт</a>
+    </nav>
+</header>
+
 
     <main class="container">
         <h1>Фотоальбом</h1>
@@ -23,5 +47,19 @@
             <!-- Добавь свои фото -->
         </div>
     </main>
+
+<script>
+function copyEmail() {
+    const email = "daurenhudaibergenov@gmail.com";
+    navigator.clipboard.writeText(email)
+        .then(() => {
+            alert("Email скопирован в буфер обмена!");
+        })
+        .catch(err => {
+            console.error("Ошибка копирования: ", err);
+        });
+}
+</script>
+
 </body>
 </html>
