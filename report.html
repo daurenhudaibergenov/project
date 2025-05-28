@@ -1,76 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Отчёт по практике</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        body {
-            font-family: "Segoe UI", sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Отчёт по практике</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+    th, td {
+      padding: 16px 20px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+      vertical-align: top;
+    }
 
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+    th {
+      background-color: #f5f5f5;
+      color: #2c3e50;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
 
-        p.subtitle {
-            text-align: center;
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 40px;
-            font-family: 'Courier New', monospace;
-            letter-spacing: 1px;
-        }
+    td {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.6;
+    }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            table-layout: fixed;
-        }
+    tr:last-child td {
+      border-bottom: none;
+    }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            vertical-align: top;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f8f8f8;
-            text-transform: uppercase;
-            font-size: 16px;
-            color: #333;
-            width: 25%;
-        }
-
-        td {
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        @media (max-width: 768px) {
-            table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
-            }
-        }
-    </style>
+    @media (max-width: 768px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+  </style>
 </head>
 <body>
+
 <header>
   <div class="container top-bar">
     <a href="index.html" class="logo">
@@ -96,33 +77,64 @@
   </nav>
 </header>
 
-<main class="container"> <!-- ВОТ ЭТА ОБЁРТКА ВАЖНА -->
+<main class="container">
   <section class="intro">
     <h1>Отчёт по летней практике</h1>
-    <p class="subtitle">Финальный отчёт, обобщающий мои действия за всё время практики.</p>
+    <p class="subtitle">20-27 мая 2025</p>
   </section>
 
   <table>
     <tr>
-      <th>Неделя</th>
-      <th>Описание</th>
+      <th>Дата</th>
+      <th>Выполненные действия</th>
     </tr>
     <tr>
-      <td>1 неделя</td>
+      <td>20 мая</td>
       <td>
-        • Установка и настройка среды разработки (PyCharm).<br>
-        • Создание репозитория на GitHub.<br>
-        • Верстка базовой структуры проекта, подключение CSS.<br>
-        • Работа с файлами: index.html, style.css и logo.
+        — Создание структуры проекта: HTML-файлы.<br>
+        — Подключение CSS (style.css).<br>
+        — Вёрстка шапки и меню навигации.
       </td>
     </tr>
     <tr>
-      <td>2 неделя</td>
+      <td>21 мая</td>
       <td>
-        • Добавление страниц: about.html, tasks.html, photos.html.<br>
-        • Разработка и оформление заданий: JS-решения.<br>
-        • Создание дневника и отчета.<br>
-        • Финальная проверка и доработка дизайна сайта.
+        — Разметка и стилизация главной страницы index.html.<br>
+        — Добавление карточек (HTML, CSS, Python).
+      </td>
+    </tr>
+    <tr>
+      <td>22 мая</td>
+      <td>
+        — Создание страницы about.html.<br>
+        — Добавление базовой адаптивности (Flex/Grid).
+      </td>
+    </tr>
+    <tr>
+      <td>23 мая</td>
+      <td>
+        — Вёрстка страницы tasks.html со стилизованными заданиями.
+      </td>
+    </tr>
+    <tr>
+      <td>24 мая</td>
+      <td>
+        — Создание страницы diary.html на основе стиля index.html.<br>
+        — Стилизация таблицы дневника.
+      </td>
+    </tr>
+    <tr>
+      <td>25 мая</td>
+      <td>
+        — Вёрстка страницы report.html с таблицей отчёта.<br>
+        — Подгонка под общий стиль сайта.
+      </td>
+    </tr>
+    <tr>
+      <td>26–27 мая</td>
+      <td>
+        — Финальная доработка: выравнивание, шрифты, цвета, отступы.<br>
+        — Адаптация под разные экраны.
       </td>
     </tr>
   </table>
@@ -140,7 +152,10 @@ function copyEmail() {
         });
 }
 </script>
-</body>
 
+</body>
 </html>
+
+
+
 
